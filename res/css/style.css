@@ -1,0 +1,47 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    user-select: none;
+}
+body{
+    background-color: rgb(230, 230, 230);
+}
+header{
+    display: block;
+    background-color: rgb(15, 15, 15);
+    height: 110px;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+}
+footer{
+    display: block;
+    background-color: rgb(15, 15, 15);
+    height: 110px;
+    width: 100%;
+    text-align: center;
+    color: rgb(230, 230, 230);
+    padding-top: 1em;
+    margin-bottom: 0;
+    position: absolute;
+    bottom: 0px;
+}
+#logoMain{
+    height: 92%;
+    margin-top: 3px;
+}
+#changeButton{
+    width: 10%;
+    height: 80px;
+    border: none;
+    color: rgb(230, 230, 230);
+    border-radius: 15px;
+    font-size: large;
+    margin: auto;
+    position: absolute;
+    bottom: 120px;
+    left: 45%;
+    background-color: rgb(15, 15, 15);
+    transform: 1s ease;
+}

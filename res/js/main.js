@@ -1,5 +1,5 @@
 const changeButton = document.getElementById("changeButton");
-var clickSound = new Audio('../res/audio/clicksound.wav');
+var clickSound = new Audio('../res/audio/clicksound.mp3');
 const body = document.body;
 function getRandomColor(){
     var letters = "0123456789ABCDEF";

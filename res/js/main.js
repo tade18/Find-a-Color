@@ -1,4 +1,5 @@
 const changeButton = document.getElementById("changeButton");
+const hexdec = document.getElementById("hexdec")
 var clickSound = new Audio('../res/audio/clicksound.mp3');
 const body = document.body;
 function getRandomColor(){
@@ -12,9 +13,10 @@ function getRandomColor(){
 function changeBackgroundColor() {
     var randomColor = getRandomColor();
     body.style.backgroundColor = randomColor;
+    hexdec.innerText = randomColor;
 }
 changeButton.onclick=()=> {
-    hideElement(changeButton)
+    hideElement(changeButton);
     setTimeout(() => {
         showElement(changeButton)
     }, 1000);

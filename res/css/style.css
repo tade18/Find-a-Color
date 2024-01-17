@@ -59,6 +59,7 @@ footer{
     background-color: rgb(15, 15, 15);
     text-align: center;
     user-select: all;
+    padding-top: 0.5em
 }
 #inputColor{
     width: 15%;

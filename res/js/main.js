@@ -18,12 +18,14 @@ function changeBackgroundColor() {
     var randomColor = getRandomColor();
     body.style.backgroundColor = randomColor;
     hexdec.innerText = randomColor;
+    hexdec.style.color = randomColor;
 }
 //BARVA PŘEVZATÁ Z USER INPUT
 function customBackgroundColor() {
     var userColor = inputColor.value;
     body.style.backgroundColor = userColor;
     hexdec.innerText = userColor;
+    hexdec.style.color = userColor;
 }
 
 //POUŽITÍ TLAČÍTKA PRO ZMĚNU BARVY

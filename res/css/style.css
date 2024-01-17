@@ -46,8 +46,8 @@ footer{
     transform: 1s ease;
 }
 #hexdec{
-    width: 10%;
-    height: 1em;
+    width: 15%;
+    height: 2em;
     border: none;
     color: rgb(230, 230, 230);
     border-radius: 15px;
@@ -59,4 +59,15 @@ footer{
     background-color: rgb(15, 15, 15);
     text-align: center;
     user-select: all;
+}
+#inputColor{
+    width: 15%;
+    height: 2em;
+    border-radius: 15px;
+    font-size: large;
+    margin: auto;
+    position: absolute;
+    bottom: 120px;
+    right: 5%;
+    text-align: center;
 }

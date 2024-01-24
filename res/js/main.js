@@ -4,7 +4,7 @@ const inputColor = document.getElementById("inputColor");
 var clickSound = new Audio('../res/audio/clicksound.mp3');
 const body = document.body;
 
-//VYTVOŘENÍ NÁHODNÉ BARVA
+//VYTVOŘENÍ NÁHODNÉ BARVY--------------------------------
 function getRandomColor(){
     var letters = "0123456789ABCDEF";
     var color = "#";
@@ -13,22 +13,21 @@ function getRandomColor(){
     }
     return color;
 }
-//ZMĚNÍ BARVU NA RANDOM
+//ZMĚNÍ BARVU NA RANDOM---------------------------------
 function changeBackgroundColor() {
     var randomColor = getRandomColor();
     body.style.backgroundColor = randomColor;
     hexdec.innerText = randomColor;
-    hexdec.style.color = randomColor;
 }
-//BARVA PŘEVZATÁ Z USER INPUT
+//BARVA PŘEVZATÁ Z USER INPUT---------------------------
 function customBackgroundColor() {
     var userColor = inputColor.value;
     body.style.backgroundColor = userColor;
     hexdec.innerText = userColor;
-    hexdec.style.color = userColor;
+    inputColor.value = "";
 }
 
-//POUŽITÍ TLAČÍTKA PRO ZMĚNU BARVY
+//POUŽITÍ TLAČÍTKA PRO ZMĚNU BARVY----------------------
 changeButton.onclick = () =>{
     if (inputColor.value=="") {
         hideElement(changeButton);
@@ -48,11 +47,11 @@ changeButton.onclick = () =>{
     }
 }
 
-//HIDE ELEMENT
+//HIDE ELEMENT------------------------------------------
 const hideElement = (element) => {
     element.style.display = "none";
 }
-//SHOW ELEMENT
+//SHOW ELEMENT------------------------------------------
 const showElement = (element) => {
     element.style.display = "initial"
 }

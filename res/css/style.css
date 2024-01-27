@@ -45,6 +45,9 @@ footer{
     background-color: rgb(15, 15, 15);
     transform: 1s ease;
 }
+#changeButton:hover{
+    cursor:pointer;
+}
 #hexdec{
     width: 15%;
     height: 2em;

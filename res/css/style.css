@@ -76,3 +76,43 @@ footer{
     right: 5%;
     text-align: center;
 }
+#testDiv1{
+    background-color: black;
+}
+
+#testDiv2{
+    background-color: rgba(0, 0, 0, 0.637);
+}
+
+.designExamples{
+    width: 30%;
+    color: white;
+    border-radius: 15px;
+    padding: 2em;
+}
+#container{
+    width: 100%;
+    height: 33%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 15%;
+    justify-content: space-around;
+    position: absolute;
+}
+@media screen and (max-width: 800px){
+    #container{
+        flex-direction: column;
+        margin-top: 28%;
+        width: 90%;
+        margin-left: 5%;
+    }
+    .designExamples{
+        width: 90%;
+        height: 60%;
+        font-size: 15px;
+    }
+    #changeButton{
+        width: 30%;
+        left: 35%;
+    }
+}
